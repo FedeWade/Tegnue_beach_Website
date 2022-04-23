@@ -1,0 +1,710 @@
+
+
+* {
+	padding: 0em;
+	margin: 0em;
+}
+
+html, body{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: auto;
+	scroll-behavior: smooth;
+	background-color: rgb(50,50,50);
+}
+
+@font-face {
+  font-family: lemondrop;
+  src: url(Lemondrop.ttf);
+}
+
+#container{
+	max-width: 1920px;
+	margin: auto;
+	overflow: hidden;
+}
+
+a#vaialcontenuto, a#vaialcontenuto:hover, a#vaialcontenuto:visited {
+	position: absolute;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	z-index: 3;
+	color: white;
+}
+
+a#vaialcontenuto:active, a#vaialcontenuto:focus {
+	position: static;
+	width: auto;
+	height: auto;
+}
+
+div#navbar{
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	max-width: 1920px;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+ul.nav {
+	list-style-type: none;
+	margin: auto;
+	overflow: hidden;
+	float: right;
+	display: block;
+	height: 80px;
+}
+
+li.h{
+	float: left;
+	text-align: center;
+}
+
+li.logo {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding: 0;
+	width: 150px;
+	text-align: center;
+	user-select: none;
+}
+
+
+a.navele {
+	
+	display: inline-block;
+	padding-top: 25px;
+	font-size: 1.1em;
+	text-align: center;
+	width: 150px;
+	height: 55px;
+	color: white;
+	user-select: none;
+}
+
+a.navele:hover {
+	background-color: rgba(20, 20, 20,  0.3);
+	color: rgba(255, 255, 255, 0.7);
+	border-top: 3px solid blue;
+}
+
+a.navele:active{
+	background-color: rgba(20, 20, 20,  0.8);
+	color: white;
+
+}
+
+img.imglogo {
+	width: 120px;
+	height: 80px;
+	
+}
+	
+/* SUBHEADER---------------------------------*/
+
+div#subheader{
+	z-index: 1;
+	width: 100%;
+	min-height: 655px;
+	max-height: 900px;
+	height: 100vh;
+	text-align: center;
+	position: relative;
+	background-image: url("../images/sfondoheader.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+img.logotitle {
+	margin-top: 12vh;
+	width: 280px;
+}
+
+h1#maintitle {
+	position: relative;
+	text-align: center;
+	margin: auto;
+	text-shadow: 6px 6px #343091;
+	font-size: 3.5em;
+	color: white;
+	font-family: lemondrop, Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+h1#subtitle {
+	position: relative;
+	font-size: 1.9em;
+	color: white;
+	text-shadow: 4px 4px #343091;
+	margin-bottom: 12px;
+	font-family: lemondrop, Verdana, Arial, Helvetica, sans-serif;
+}
+
+ul#cinfo {
+	margin: auto;
+	list-style-type: none;
+	
+}
+
+li.shinfo {
+	display: table;
+	color: white;
+	text-shadow: 2px 2px black;
+	position: relative;
+	text-align: center;
+	margin: auto;
+	font-size: 1.4em;
+	background-color: rgba(0, 0, 0, 0.4);
+	width:auto;
+}
+
+a.linkbutton1 {
+	position: relative;
+	top: 40px;
+	color: black;
+	font-size: 1.1em;
+	background-color: rgba(255, 255, 255, 1);
+	padding: 15px;
+	border-radius: 25px;
+	border: 1.5px solid black;
+	transition: 0.4s ease;
+	user-select: none;
+}
+
+a.linkbutton1:hover {
+	background-color: rgba(250, 250, 250, 0.9);
+	color: blue;
+	border-color: blue;
+}
+
+
+a.scrolldownbutton {
+	position: absolute;
+	bottom: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 75px;
+	padding: 0px 1px;
+	display: block;
+	color: white;
+	border-radius: 25px;
+	font-size: 5em;
+	transition: 0.4s ease;
+}
+
+a.scrolldownbutton:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*slideshow---------------------------------------*/
+
+div#slideshowcontainer {
+	position: relative;
+	float: left;
+	width: 45%;
+	overflow: hidden;
+	height: 350px;
+	margin: 115px 5px 0px 4%;
+	text-align: center;
+	border-radius: 10px;
+	
+}
+
+.slideimg{ 
+	position: absolute;
+    top: 90%;
+    left: 40%;
+    transform: translateX(-40%) translateY(-90%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.slide{
+	display: none;
+}
+
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 70px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: auto;
+  padding: 0 16px;
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  user-select: none;
+  border: none;
+}
+
+#prev {
+	left: 0;
+	border-radius: 0 3px 3px 0;
+}
+
+#next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+#prev:hover, #next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/*ilristoraante--------------------------------*/
+
+
+div#risto {
+	border-top: 1.5px solid black;
+	width: 100%;
+	height: 600px;
+	position: relative;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+div#descrizione{
+	width: 40%;
+	height: 350px;
+	padding: 112px 5% 5% 5%;
+	position: relative;
+	float: right;
+	text-align: center;
+
+}
+
+p.tdesc {
+	color: black;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+#indstrad:hover {
+	background-color: rgba(0, 0, 0, 0.9);
+	color: white;
+	border-color: black;
+	
+}
+
+/*MENU barra--------------------------------------------------------*/
+div#menu {
+	position: relative;
+	text-align: center;
+	background-color: rgba(230, 230, 230, 1);
+}
+
+h2#titolonavmenu {
+	padding-top: 80px;
+	padding-bottom: 10px;
+}
+
+div#menunav {
+	text-align:center;
+}
+
+ul.navmenugruppo {
+	margin-top: 5px;
+}
+
+li.navmenuele {
+	display: inline;	
+}
+
+.btn {
+	display: inline-block;
+	background-color: rgba(20, 20, 20, 0.6);
+	color: white;
+	font-size: 1.2em;
+	width: 120px;
+	padding: 20px 0px;
+	margin: -2px;
+	cursor: pointer;
+	text-decoration: underline;
+	user-select: none;
+	border: none;
+}
+
+.btn:hover {
+	background-color: rgba(20, 20, 20,  0.7);
+
+}
+
+.active, .active:hover{
+	background-color: white;
+	border: 2px solid  black;
+	width: 116px;
+	border-bottom: 0px;
+	color: black;
+	text-decoration: underline;
+	cursor: default;
+}
+
+
+
+/*lista elementi MENU----------------------------*/
+div#listaelemenu {
+	position: relative;	
+	text-align: center;
+	background-color: rgba(230, 230, 230, 1);
+}
+
+.ulmenu{
+	width: 90%;
+	margin: auto;
+	list-style-type: none;
+	overflow: hidden;
+	margin-bottom: 30px;
+	
+}
+
+li.allmenu{
+	padding: 25px 0px;
+	font-size: 1.2em;
+	border-top: 1px solid rgb(200, 200, 200);
+	text-align: left;
+}
+
+
+
+p.elenome {
+	color: black;
+	position: relative;
+	display: inline-block;
+	width: 74%;
+	margin-left: 5%;
+}
+
+p.eleprezzo {
+	float: right;
+	color: black;
+	position:relative;
+	display: inline-block;
+	right: 5%;
+}
+
+.liprimo, .lisecondo, .licontorno, .lipfreddo, .lidolce{
+	display: none;
+}
+
+p#infoallergeni {
+	border-top: 1px solid rgb(200, 200, 200);
+	margin: auto;
+	width: 70%;
+	font-size: 0.9em;
+	padding-bottom: 90px;
+	color: rgb(70, 70, 70);
+}
+
+/* prenota---------------------------------------------------*/
+	
+div#prenota{
+	position: relative;
+	background-image: url("../images/ristorantealto.jpg");
+	height: auto;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 83px 0 45px 0;
+	
+}	
+	
+div#formprenota {
+	width: 80%;
+	margin: auto;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	padding: 8px;
+}
+
+fieldset {
+	border:1px solid white;
+}
+
+legend {
+	color: white;
+	font-size: 1.3em;
+	text-align: center;
+	margin: 0 20px;
+}
+
+h2#hprenota {
+	color: white;
+	font-size: 1.8em;
+	margin-bottom: 10px;
+}
+
+input{
+	position: relative;
+	width: 40%;
+	height: 50px;
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 0px 10px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.9);
+	border: 2px solid black;	
+	box-sizing: border-box;
+	font-size: 1.2em;
+}
+
+input:hover {
+	background-color: white;
+}
+
+input:focus {
+	border: 2px solid blue;
+	background-color: white;
+}
+
+label{
+	display: inline-block;
+	color: white;
+	position: relative;
+	margin-top: 18px;
+	width: 36.5%;
+	text-align: left;
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+.leftside {
+	float: left;
+	margin-left: 7%;
+}
+
+.rightside {
+	margin-top: -30px;
+	float: right;
+	margin-right: 7%;
+}
+
+.centered {
+	clear: both;
+	display: block;
+	text-align: left;
+	width: 55%;
+	margin: auto;
+	margin-top: 310px;
+}
+
+input#cn, #dt, #num{
+	float: left;
+	margin-left: 5%;
+	clear: left;
+}
+input#or, #mail, #pers{
+	float: right;
+	margin-right: 5%;
+	clear: right;
+}
+
+
+input#submitprenota {
+	width: 120px;
+	display: inline-block;
+	padding: 13px;
+	margin: 20px 10px;
+	color: black;
+	font-size: 1.3em;
+	background-color: rgba(250, 250, 250, 1);
+	border-radius: 25px;
+	border: 2px solid black;
+	transition: 0.4s ease;
+	text-decoration: underline;
+
+}
+
+input#submitprenota:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: blue;
+	border-color: blue;
+	
+}
+
+
+textarea#note {
+	display: block;
+	margin: auto;
+	width: 60%;
+	height: 100px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.9);
+	resize: none;
+	font-size: 1.2em;
+}
+
+#note:hover {
+	background-color: white;
+}
+
+#note:focus{
+	border: 2px solid blue;
+	background-color: white;
+}
+
+p#infoprenota{
+	color: white;
+	margin: 10px;
+}
+
+/*contatti--------------------------------------------------------*/
+
+div#contatti {
+	position: relative;
+	width: 100%;
+	height: 345px;
+	overflow: hidden;
+	background-color: rgb(40, 40, 40);
+	border-top: 1.5px solid rgb(90, 90, 90);
+	
+}
+
+div#logof {
+	position: relative;
+	width: 32%;
+	height: 350px;
+	float: left;
+	text-align: center;
+}
+img.logocontatti{
+	position: relative;
+	width: 80%;
+	max-width: 360px;
+	top: 50%;
+	margin-top: -22%;
+}
+
+div#infocontatto {
+	position: relative;
+	float: left;
+	width: 32%;
+	height: auto;
+	margin: 70px 0;
+	padding: 5px 20px;
+	border-left: 1px solid rgb(90, 90, 90);
+	border-right: 1px solid rgb(90, 90, 90);
+}
+
+h3 {
+	font-size: 1.4em;
+	color: rgb(150, 150, 150);
+	text-align: center;
+}
+
+ul.cinfofoot {
+	list-style-type: none;
+	
+	color: white;
+}
+
+li.foot {
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+.f {
+	margin: 0 6px;
+	font-size: 1em;
+	padding: 2px 4px;
+	float: left;
+	color: rgb(130, 130, 130);
+}
+
+div#social{
+	position: relative;
+	float: left;
+	width: 30%;
+	margin-top: 130px;
+	text-align:center;
+}
+
+a.fo {
+	padding: 20px;
+	font-size: 50px;
+	width: 25%;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	position: absolute;
+}
+
+.fa-facebook{
+	background: #3B5998;
+	right: 50.5%;
+}
+
+.fa-arrow-up{
+	background: rgb(90, 90, 90);
+	left: 50.5%;
+}
+
+a.fo:hover {
+	opacity: 0.7;
+	
+}
+
+/*end---------------------------------------------------------*/
+
+div#end {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	background-color: black;
+	text-align: center;
+}
+
+p#piva {
+	font-size: 0.8em;
+	color: rgb(190, 190, 190);
+	margin-top: 18px;
+}
+
+.error {
+	color: red;
+	right: 0px;
+	font-size: 1.1em;
+	position:absolute;
+}
+
+.formerror{font-size:1em;
+	color:#fff;
+	text-align:left;
+	margin:10px;
+	margin-left:13%;
+	list-style-type:none;
+}
+
+.err{
+	color: red;
+	margin: 5px;
+}
+
+div#errbox {
+	background-color: rgba(255, 0, 0, 0.3);
+	margin: auto;
+	width: 90%;
+}
+
+div#confirmbox {
+	background-color: rgba(0, 255, 0, 0.3);
+	margin: auto;
+	width: 90%;
+}
