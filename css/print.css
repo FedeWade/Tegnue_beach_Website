@@ -1,0 +1,114 @@
+a[href]:after {
+  content: " (" attr(href) ")";
+}
+
+p{
+	font-size: 12pt;
+}
+
+#navbar, #vaialcontenuto, .logotitle, .linkbutton1, .scrolldownbutton, #slideshowcontainer, #menunav, #logof{
+	display: none;
+}
+
+#subheader {
+	text-align:center;
+}
+
+h1{
+	display: inline;
+	margin: 0px 5px;
+}
+
+h2, h3{
+	margin: 2px;
+	text-align: left;
+}
+	
+
+
+ul#cinfo {
+	list-style-type: none;
+	text-align: left;
+}
+
+#indstrad {
+	display: block;
+}
+
+li.allmenu {
+	width: 500px;
+	margin: 10px;
+	border-bottom: 0.5px solid grey;
+}
+
+.eleprezzo, .elenome {
+	display: inline;
+}
+
+.eleprezzo {
+	float: right;
+	clear: both;
+	margin: 0px 10px 10px 10px;
+}
+
+div#formprenota {
+	text-align: center;
+}
+
+input{
+	position: relative;
+	width: 40%;
+	display: inline-block;
+	margin: 0px 10px;
+}
+
+label{
+	display: inline-block;
+	position: relative;
+	width: 36%;
+	text-align: left;
+}
+
+input#cn, #dt, #num{
+	float: left;
+	margin-left: 30px;
+	clear: left;
+}
+input#or, #mail, #pers{
+	float: right;
+	margin-right: 30px;
+	clear: right;
+}
+
+.leftside {
+	float: left;
+	margin-left: 4%;
+}
+
+.rightside {
+	margin-top: -17px;
+	float: right;
+	margin-right: 7%;
+}
+
+.centered {
+	clear: both;
+	display: block;
+	text-align: left;
+	margin: auto;
+}
+
+textarea#note {
+	margin: auto;
+	width: 40%;
+	display: block;
+	margin-bottom: 10px;
+}
+
+input#submitprenota {
+	width: 120px;
+}
+
+.fa-arrow-up{
+	visibility: hidden;
+}

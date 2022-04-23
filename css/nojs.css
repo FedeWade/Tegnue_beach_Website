@@ -1,0 +1,15 @@
+.njs {
+	display: block;
+}
+
+#prev, #next {
+	display: none;
+}
+
+div#menunav {
+	display: none;
+}
+
+.allmenu {
+	display: block;
+}
